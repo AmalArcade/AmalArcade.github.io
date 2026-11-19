@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090912">
+<meta name="description" content="Portfolio of Amal S Prasad — independent app developer building useful digital experiences.">
+<title>Amal S Prasad | App Developer</title>
+<style>
+:root{--bg:#090912;--panel:#11111d;--panel2:#171727;--text:#f4f2ff;--muted:#aaa8bf;--line:rgba(255,255,255,.09);--purple:#9b7bff;--cyan:#57d9e8;--glow:rgba(155,123,255,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(105,65,190,.18),transparent 34%),radial-gradient(ellipse at 0% 35%,rgba(32,150,170,.09),transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--purple)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover,.textlink:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 11px}
+.hero{padding:108px 0 90px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:55px;min-height:560px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.06;letter-spacing:-2.8px;margin:18px 0}.gradient{background:linear-gradient(100deg,#fff 10%,#bba8ff 55%,#61dce8);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:620px;color:var(--muted);font-size:17px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 19px;border-radius:12px;font-weight:700;font-size:14px;border:1px solid var(--line);transition:.25s}.btn.primary{background:linear-gradient(110deg,#8061ec,#5c9de9);border:0;box-shadow:0 10px 35px var(--glow)}.btn:hover{transform:translateY(-3px);filter:brightness(1.12)}.hero-art{position:relative;min-height:330px;display:grid;place-items:center}.orb{width:min(310px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c9b9ff,#8062dc 35%,#27214b 68%,#11111d 72%);box-shadow:0 0 90px rgba(132,98,230,.3),inset -20px -25px 50px rgba(0,0,0,.45);position:relative;animation:float 6s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(194,177,255,.42);border-radius:50%;inset:-24px;transform:rotate(-25deg) scaleY(.38)}.orb:after{inset:-48px;transform:rotate(28deg) scaleY(.28);border-color:rgba(87,217,232,.28)}.orbtext{position:absolute;text-align:center;font-size:14px;font-weight:800;letter-spacing:2px;color:white;text-shadow:0 2px 12px #392b72}.orbtext strong{display:block;font-size:38px;letter-spacing:-1px}.float-tag{position:absolute;background:rgba(23,23,39,.85);border:1px solid var(--line);backdrop-filter:blur(14px);padding:10px 14px;border-radius:12px;color:#ded9f7;font-size:12px;box-shadow:0 12px 30px #0005}.tag1{top:22px;right:0}.tag2{bottom:26px;left:0}
+section{padding:76px 0}.section-head{margin-bottom:32px}.kicker{color:var(--cyan);font-size:11px;letter-spacing:2px;font-weight:800;text-transform:uppercase}.section-head h2{font-size:clamp(28px,4vw,40px);letter-spacing:-1px;margin:7px 0}.section-head p{color:var(--muted);max-width:620px;margin:0}.aboutbox{background:linear-gradient(135deg,rgba(155,123,255,.10),rgba(87,217,232,.04));border:1px solid var(--line);border-radius:22px;padding:30px;color:#d7d4e8;max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:19px;padding:24px;transition:.25s;position:relative;overflow:hidden}.card:hover{transform:translateY(-5px);border-color:rgba(155,123,255,.48);box-shadow:0 18px 45px rgba(0,0,0,.22)}.app-top{display:flex;align-items:center;gap:15px;margin-bottom:16px}.app-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,rgba(155,123,255,.3),rgba(87,217,232,.13));border:1px solid rgba(255,255,255,.1);font-size:22px}.card h3{margin:0;font-size:20px}.sub{color:var(--cyan);font-size:12px;font-weight:700}.card p{color:var(--muted);font-size:14px;margin:0 0 18px}.textlink{font-size:13px;font-weight:800;color:#c5b5ff}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{font-size:12px;color:#d8d3ef;background:#171727;border:1px solid var(--line);padding:8px 12px;border-radius:999px}
+.socials{display:flex;gap:12px;flex-wrap:wrap}.social{width:50px;height:50px;border:1px solid var(--line);border-radius:15px;background:var(--panel);display:grid;place-items:center;color:#ddd6ff;transition:.25s}.social:hover{background:var(--panel2);border-color:var(--purple);transform:translateY(-4px);box-shadow:0 8px 25px var(--glow)}.social svg{width:22px;height:22px;fill:currentColor}.social-note{color:var(--muted);font-size:13px;margin-top:15px}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:24px;background:linear-gradient(110deg,rgba(125,91,220,.2),rgba(52,151,170,.1));border:1px solid var(--line);border-radius:22px;padding:30px}.contact h2{margin:0 0 5px;font-size:28px}.contact p{margin:0;color:var(--muted)}footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media(max-width:760px){.navlinks{display:none;position:absolute;top:76px;left:20px;right:20px;padding:18px;background:#151523;border:1px solid var(--line);border-radius:15px;flex-direction:column;gap:14px;z-index:5}.navlinks.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding:75px 0 55px;gap:25px;text-align:center}.lead{margin:auto}.actions{justify-content:center}.hero-art{min-height:290px}.orb{width:235px}.tag1{right:4%}.tag2{left:4%}section{padding:58px 0}.grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.nav{height:68px}.navlinks{top:68px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home">AMAL<span>.</span></a>
+  <nav class="navlinks" id="navlinks"><a href="#about">About</a><a href="#apps">My Apps</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">Independent App Developer</div>
+    <h1>Building useful<br><span class="gradient">digital experiences.</span></h1>
+    <p class="lead">Hi, I'm Amal S Prasad. I create practical mobile applications, software and digital experiences with a focus on useful features and thoughtful design.</p>
+    <div class="actions"><a class="btn primary" href="#apps">Explore My Apps <span>↗</span></a><a class="btn" href="#contact">Get in Touch</a></div>
+  </div>
+  <div class="hero-art" aria-label="Abstract neon portfolio artwork"><div class="orb"></div><div class="orbtext"><strong>ASP</strong>CREATIVE DEVELOPER</div><div class="float-tag tag1">✦ Apps & Software</div><div class="float-tag tag2">⌘ Ideas into reality</div></div>
+</section>
+
+<section class="wrap" id="about">
+  <div class="section-head"><div class="kicker">A little introduction</div><h2>About Me</h2><p>Curious about technology. Focused on building things that are useful.</p></div>
+  <div class="aboutbox">I'm Amal S Prasad, an independent app developer interested in creating helpful digital products. My work includes productivity tools, utility applications, lifestyle apps and interactive projects. I enjoy taking an idea from concept to a working experience and continuously improving it.</div>
+</section>
+
+<section class="wrap" id="apps">
+  <div class="section-head"><div class="kicker">What I've built</div><h2>My Applications</h2><p>A selection of mobile applications and tools I've worked on.</p></div>
+  <div class="grid">
+    <article class="card"><div class="app-top"><div class="app-icon">₹</div><div><h3>SalaryPro</h3><div class="sub">Salary & Payroll Management</div></div></div><p>A payroll utility for salary calculation, attendance, overtime, employee records and PDF salary documents.</p><a class="textlink" href="#contact">App details coming soon ↗</a></article>
+    <article class="card"><div class="app-top"><div class="app-icon">🛠</div><div><h3>RepairMate</h3><div class="sub">Repair & Maintenance</div></div></div><p>An offline-friendly app with basic self-repair knowledge and useful measurement calculators.</p><a class="textlink" href="#contact">View app details ↗</a></article>
+    <article class="card"><div class="app-top"><div class="app-icon">♡</div><div><h3>HerLife</h3><div class="sub">Women's Lifestyle</div></div></div><p>A lifestyle and wellness companion concept with study, routine and period-tracking features.</p><a class="textlink" href="#contact">View app details ↗</a></article>
+    <article class="card"><div class="app-top"><div class="app-icon">▤</div><div><h3>PDF Maker Pro</h3><div class="sub">PDF Utility Tools</div></div></div><p>A document utility project focused on creating and managing useful PDF files.</p><a class="textlink" href="#contact">View app details ↗</a></article>
+  </div>
+</section>
+
+<section class="wrap" id="projects">
+  <div class="section-head"><div class="kicker">Beyond applications</div><h2>Other Projects</h2><p>Experiments and creative work across games, websites and digital tools.</p></div>
+  <div class="grid">
+    <article class="card"><div class="app-top"><div class="app-icon">✧</div><div><h3>Prism Bloom</h3><div class="sub">Game Development</div></div></div><p>A colorful puzzle game project built around lasers, mirrors, targets and progressively challenging levels.</p></article>
+    <article class="card"><div class="app-top"><div class="app-icon">⌘</div><div><h3>Web Projects</h3><div class="sub">Web Design & Development</div></div></div><p>Creative website concepts and interactive web experiences, designed with a focus on clean interfaces.</p></article>
+  </div>
+</section>
+
+<section class="wrap" id="skills">
+  <div class="section-head"><div class="kicker">Tools of the trade</div><h2>Skills & Interests</h2><p>Technologies and creative areas I work with and continue to explore.</p></div>
+  <div class="chips"><span class="chip">Android App Development</span><span class="chip">Web Development</span><span class="chip">UI / UX Design</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Capacitor</span><span class="chip">AI-assisted Development</span><span class="chip">Game Development</span><span class="chip">PDF Tools</span></div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="contact"><div><div class="kicker">Let's connect</div><h2>Have an idea or a project?</h2><p>Reach out and let's talk about building something useful.</p></div><a class="btn primary" id="emailButton" href="mailto:">Contact Me ↗</a></div>
+  <div style="margin-top:32px"><div class="section-head" style="margin-bottom:16px"><h2 style="font-size:22px">Find me on social media</h2><p>Social profile links can be added here.</p></div>
+    <div class="socials">
+      <a class="social" data-social="instagram" href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a>
+      <a class="social" data-social="youtube" href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+      <a class="social" data-social="facebook" href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.9h3l.5-3.5h-3.5V7.4c0-1 .3-1.7 1.8-1.7h1.9V2.6c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.3H6.5v3.5h3.2V22h3.8z"/></svg></a>
+      <a class="social" data-social="github" href="#" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2a10.8 10.8 0 0 1 5.6 0c2.1-1.5 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.3-2.7 5.3-5.3 5.6.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8z"/></svg></a>
+      <a class="social" data-social="whatsapp" href="#" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6a11.8 11.8 0 0 0 14-18.4zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9 9 0 1 1 12 21zm5-6.7c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.8 4.3 1.8.8 2.5.9 3.4.8.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+      <a class="social" data-social="x" href="#" aria-label="X" title="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.4l7.3-8.4L1.9 2h6.5l4.5 6.7L18.9 2zm-1.1 18h1.7L7.4 3.9H5.6L17.8 20z"/></svg></a>
+    </div>
+    <p class="social-note">To activate your social buttons, add your profile URLs in the <strong>socialLinks</strong> section near the bottom of this file.</p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Amal S Prasad. All rights reserved.</span><span>Designed with purpose <span style="color:#a88aff">✦</span></span></div></footer>
+<script>
+// EDIT THESE VALUES with your real links before publishing.
+const socialLinks = {
+  instagram: "", // e.g. https://www.instagram.com/yourusername/
+  youtube: "",   // e.g. https://www.youtube.com/@yourchannel
+  facebook: "",  // e.g. https://www.facebook.com/yourprofile
+  github: "",    // e.g. https://github.com/yourusername
+  whatsapp: "",  // e.g. https://wa.me/91XXXXXXXXXX
+  x: ""           // e.g. https://x.com/yourusername
+};
+const contactEmail = ""; // Add your email address here.
+document.querySelectorAll("[data-social]").forEach(el=>{
+  const url=socialLinks[el.dataset.social];
+  if(url){el.href=url;el.target="_blank";el.rel="noopener noreferrer";}
+  else {el.addEventListener("click",e=>{e.preventDefault();alert("Add your "+el.dataset.social+" profile link in the socialLinks section in index.html.");});}
+});
+if(contactEmail){document.getElementById("emailButton").href="mailto:"+contactEmail;}
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("menu").addEventListener("click",()=>document.getElementById("navlinks").classList.toggle("open"));
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("open")));
+</script>
+</body>
+</html>
